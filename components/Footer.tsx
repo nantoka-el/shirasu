@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { COMPANY_INFO, LINE_CONFIG } from '@/lib/constants'
-import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -48,9 +48,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm hover:text-shinojima-gold transition-colors"
               >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C6.48 2 2 6.28 2 11.53c0 2.68 1.25 5.1 3.27 6.84-.13.47-.66 2.37-.75 2.73-.12.46.17.46.36.34.15-.09 2.36-1.56 2.73-1.82.74.13 1.52.2 2.32.2 5.52 0 10-4.28 10-9.53C22 6.28 17.52 2 12 2zm-4.79 8.5h1.63v4.13h-1.63V10.5zm2.45 0h1.63v4.13h-1.63V10.5zm4.41 0h1.24l-1.66 2.26 1.7 1.87h-1.34l-1.13-1.31-.46.62v.69h-1.03V10.5h1.03v1.6l1.65-1.6z"/>
-                </svg>
+                <MessageCircle className="w-5 h-5" />
                 LINE公式アカウント
               </a>
               <p className="text-sm text-shinojima-gray-dark">
