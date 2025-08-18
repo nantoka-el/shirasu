@@ -26,11 +26,12 @@ export default function Header({ initialSolid = false }: HeaderProps) {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  const basePath = process.env.NODE_ENV === 'production' ? '/shirasu' : '';
   const navItems = [
-    { label: '商品', href: '/#products' },
-    { label: 'お客様の声', href: '/#testimonials' },
-    { label: '購入の流れ', href: '/#flow' },
-    { label: 'よくある質問', href: '/#faq' },
+    { label: '商品', href: `${basePath}/#products` },
+    { label: 'お客様の声', href: `${basePath}/#testimonials` },
+    { label: '購入の流れ', href: `${basePath}/#flow` },
+    { label: 'よくある質問', href: `${basePath}/#faq` },
   ]
 
   const solid = initialSolid || isScrolled
@@ -42,7 +43,7 @@ export default function Header({ initialSolid = false }: HeaderProps) {
       }`}>
         <div className="container-custom">
           <nav className="flex items-center justify-between">
-            <a href="/" className="flex items-center gap-2">
+            <a href={process.env.NODE_ENV === 'production' ? '/shirasu/' : '/'} className="flex items-center gap-2">
               <Fish className={`w-8 h-8 ${solid ? 'text-shinojima-ai' : 'text-white'}`} />
               <span className={`font-mincho text-xl ${solid ? 'text-shinojima-black' : 'text-white'}`}>
                 篠島直送生しらす 虎丸水産

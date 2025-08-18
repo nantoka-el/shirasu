@@ -46,7 +46,7 @@ export default function Trust() {
               </div>
               <div className="mb-6">
                 <img 
-                  src="/images/大二郎くん.jpg"
+                  src={`${process.env.NODE_ENV === 'production' ? '/shirasu' : ''}/images/大二郎くん.jpg`}
                   alt="代表 新美 大二郎"
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />

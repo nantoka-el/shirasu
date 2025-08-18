@@ -6,7 +6,7 @@ export function ShirasuDonImage() {
   return (
     <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden">
       <img
-        src="/images/生しらす.jpg"
+        src={`${process.env.NODE_ENV === 'production' ? '/shirasu' : ''}/images/生しらす.jpg`}
         alt="生しらす"
         className="w-full h-full object-cover"
       />
@@ -21,7 +21,7 @@ export function FrozenPackImage() {
   return (
     <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden">
       <img
-        src="/images/冷凍生しらす.jpg"
+        src={`${process.env.NODE_ENV === 'production' ? '/shirasu' : ''}/images/冷凍生しらす.jpg`}
         alt="冷凍生しらす"
         className="w-full h-full object-cover"
       />

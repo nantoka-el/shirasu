@@ -19,10 +19,10 @@ export default function Testimonials() {
               <div className="absolute inset-0">
                 <img 
                   src={testimonial.id === 1 
-                    ? "/images/MC_2640_77854_1.jpg" 
+                    ? `${process.env.NODE_ENV === 'production' ? '/shirasu' : ''}/images/MC_2640_77854_1.jpg` 
                     : testimonial.id === 2 
-                    ? "/images/bebe_02.jpg"
-                    : "/images/7321_7339_ph1.webp"
+                    ? `${process.env.NODE_ENV === 'production' ? '/shirasu' : ''}/images/bebe_02.jpg`
+                    : `${process.env.NODE_ENV === 'production' ? '/shirasu' : ''}/images/7321_7339_ph1.webp`
                   }
                   alt="店内の様子"
                   className="w-full h-full object-cover opacity-60"
