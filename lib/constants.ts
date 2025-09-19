@@ -11,16 +11,16 @@ export const LINE_CONFIG = {
 }
 
 export const COMPANY_INFO = {
-  name: 'フロント株式会社',
-  address: '〒000-0000 愛知県〇〇市〇〇町0-0-0',
+  name: '株式会社いっぱち',
+  address: '〒460-0003 愛知県名古屋市中区錦2丁目16番22号 第2ブラストンビル1F',
   tel: '000-0000-0000',
   email: 'info@example.com',
   businessHours: '平日 10:00–17:00',
   bank: {
-    name: '三菱UFJ銀行 〇〇支店',
+    name: '豊川信用金庫 幸田支店',
     type: '普通',
-    number: '1234567',
-    holder: 'フロント株式会社',
+    number: '4506941',
+    holder: '株式会社いっぱち',
   },
   partner: '虎丸水産',
 }
@@ -28,23 +28,23 @@ export const COMPANY_INFO = {
 export const PRODUCTS = {
   fresh: {
     name: '生しらす',
-    minOrder: '500g〜',
-    pricePerUnit: '100g 700円（参考価格）',
-    priceExample: '500g = 3,500円',
+    minOrder: '500g〜（100g単位で追加）',
+    pricePerUnit: '100g 790円（参考価格）',
+    priceExample: '500g = 3,950円',
     shelfLife: '到着後2日以内推奨',
-    availability: '入荷不安定・当日発送',
-    note: '朝獲れ限定。入荷はLINEで速報、お早めに。',
+    availability: '入荷不安定・当日発送（当日配送）',
+    note: '会員限定・前日仮予約制。対象エリアは当日配送・送料無料。',
   },
   frozen: {
     name: '冷凍しらす',
-    minOrder: '20パック（2kg）〜',
-    pricePerUnit: '100g 800円（参考価格）',
+    minOrder: '10パック（1kg）〜',
+    pricePerUnit: '100g 790円（参考価格）',
     packaging: '100g個包装',
     shelfLife: '冷凍保管で6か月以内推奨',
-    note: '100g個包装。業務に使いやすく、味はそのまま。',
+    note: '100g個包装。業務に使いやすく、味はそのまま。B2Bは10パック〜のボリューム割（最大@600円/100g）。送料はお客様負担。',
     discount: {
-      monthly2kg: '5%OFF',
-      monthly5kg: '8%OFF',
+      monthly2kg: '10パック〜のボリューム割あり',
+      monthly5kg: '最大 @600円/100g（詳細はお問い合わせ）',
     },
   },
 }

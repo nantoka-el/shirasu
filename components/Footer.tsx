@@ -110,7 +110,7 @@ export default function Footer() {
           </div>
           
           <div className="text-center mt-6 text-xs text-shinojima-gray-dark">
-            <p>&copy; 2024 虎丸水産 & フロント株式会社. All rights reserved.</p>
+            <p>&copy; 2024 虎丸水産 & 株式会社いっぱち. All rights reserved.</p>
           </div>
         </div>
       </div>
